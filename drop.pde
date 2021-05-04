@@ -1,5 +1,5 @@
 class Drop {
-  float x = width / 2;
+  float x = random(width);
   float y = 0;
   float yspeed = 1;
   
