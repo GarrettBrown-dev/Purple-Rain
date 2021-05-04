@@ -1,10 +1,13 @@
 class Drop {
   float x = random(width);
-  float y = 0;
-  float yspeed = 1;
+  float y = random(- 200, - 100);
+  float yspeed = random(4, 10);
   
   void fall() {
     y = y + yspeed;
+    if (y > height) {
+      y = random( - 200, - 100);
+    }
   }
   
   void show() {
